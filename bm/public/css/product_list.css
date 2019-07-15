@@ -1,0 +1,18 @@
+.container{width: 1200px;margin: 0 auto;}
+#searchCdtion{width: 100%;overflow: hidden;}
+#searchCdtion>h6{border-bottom: 1px solid #ddd; padding: 12px; }
+.conditionList,#slected_condition{
+	width: 1200px;height: 40px; border-bottom: 1px solid #ddd;line-height: 40px;
+	font-size:14px; color: #635e5e;overflow: hidden;
+}
+#cancel_parent #cancel{width: 60px;height: 40px; margin:0 30px 0 0;float: right;}
+#cancel_parent span{margin: 2px;}
+
+.conditionList>ul li{float: left; width: 70px;}
+.conditionList>ul li:first-child{width: 96px;text-align: right; margin-right:25px;}
+#conditionBtn{width: 80px;height: 20px;margin:20px auto;display: block;outline: none;border:none; }
+.d_none{display: none;}
+
+.conditions{border:1px solid #000; padding: 2px;}
+
+

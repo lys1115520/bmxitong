@@ -1,0 +1,58 @@
+
+.shopcartheader{width:1000px;height:50px;margin: 20px auto;}
+.shopcartheader::after{display:block;content:'';clear:both;
+    height:0;
+    overflow:hidden;}
+.shopcartheader>span{width:120px;height:40px;font-size: 28px;vertical-align:top;margin:10px 0 0 20px;}
+.sho_h_right{float:right;width:160px;text-align: center;}
+.sho_h_right p{font-size:13px;}
+.sho_h_right>div>b.now-color,.sho_h_right>div.now-color{background-color:green;}
+.now-color{color: green;}
+.sho_h_right>div{width:160px;height:12px;background-color: darkgray;margin:10px 0px 10px 0px;position: relative;}
+.sho_h_right>div{border-radius: 5px;}
+
+.sho_h_right>div>b{
+    position:absolute;width:20px;height:20px; top:-4px;display:inlin-block;background-color:darkgray;border-radius:50%;color:#fff}
+
+.sho_h_right>div>b.now-color,.sho_h_right>div.now-color{background-color:grenn;}
+.th{display: flex;align-items: center;margin-top:20px;height:42px;border:1px solid rgba(22, 19, 19, 0.2);font-size:13px;}
+.p-l-10{padding-left:10px;}
+.ck-all{width:228px;}
+.th-detail{width:320px;}
+.th-price{width:120px;}
+.th-number{width:105px;} 
+.th-sum{width:145px;}
+.th-op{width:70px;}
+.th-ck{height:50px;line-height: 50px;font-size:14px;}
+.float-right{float: right;}
+.pro_list{display: flex;align-items: center;margin-top:5px;height:100px;border:1px solid rgba(22, 19, 19, 0.2);font-size:13px;justify-content: space-between;}
+.pro_list .w-200{width:200px;}
+.pro_list input[type=text]{width: 26px;height:24px;text-align: center;}
+.num-text{width:72px;height:24px;text-align: center;border:1px solid slategray;}
+.p-r-10{padding-right:10px;}
+.tfoot{margin:50px 0 80px 0;width:1000px;height:60px;border:2px solid rgba(22, 19, 19, 0.2);font-size:13px;box-sizing: border-box;}
+.tfoot-left{width:500px;line-height: 60px;float: left;}
+
+.tfoot-right>div,.tfoot-right{float:right;}
+.tfoot-right>div:last-child{line-height: 20px;padding-top: 10px;}
+/*.tfoot-right>p{height: 60px;line-height: 60px;}*/
+.tfoot-right button{width: 120px;height:56px;font-size: 20px;font-weight: 700;margin-left: 20px;background-color: firebrick;color: white;
+    }
+.confirmBack{
+	opacity: 0.7;background: rgb(0, 0, 0) none repeat scroll 0% 0%;position: fixed;
+left: 0px;top: 0px;width: 100%;height: 100%;overflow: hidden;z-index: 102;display: none;}
+
+.confirmBox{
+	border:3px solid #ddd;
+	width: 400px;height:240px;background-color: #fff;
+	position: fixed;text-align: center;
+left:40%;top:30%;z-index: 1025;display: none;
+}
+.confirmBox h1{margin-top: 50px;}
+.confirmBox>h1>span{float: right;margin-right:20px;}
+.confirmBox a{width: 100px;height: 60px;margin: 20px;display: inline-block;border-radius: 8px;
+	background-color:firebrick;text-align: center;line-height: 60px;font-size: 20px;}
+.confirmBox a:last-child{background-color:#fff;border:2px solid #ddd; }
+.confirmBox a:last-child:hover{background-color:#ddd;border:2px solid #000;
+ }
+.confirmBox a:first-child:hover{color: #fff;}

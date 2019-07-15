@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>八马茶业官方商城</title>
+    <meta content="1212122" property="qc:admins/"><!--qq-->
+    <meta content="9895bb61ab873d991" property="wb:webmaster/"><!--sina-->
+    <meta name="description" content="JDstore商城 - 最优质的独立商城系统" />
+    <meta name="keywords" content="商城开发，商城订制，电商网站开发，购物网站建设" />
+    <meta name="renderer" content="webkit" /><!-- 极速打开模式 -->
+    <link rel="stylesheet"  href="../css/01.css"/>
+    <link rel="Shortcut Icon"  href=""/>
+    <style>
+        body{font-family: Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\5b8b体,sans-serif;
+        }
+        body{font:12px/150% Arial,Verdana;}
+        .container{width:1200px;height:43px;margin:0 auto;}
+        .log_header{width:1000px;height:43px;margin:20px auto;line-height: 43px;}
+        .log_header>h2{
+            display:block;
+            float: left;
+            width:141px;
+            height: 43px;
+            margin-left: 20px;
+            padding-left: 20px;
+            border-left: 2px solid #C8C8C8;
+            font-family: "微软雅黑";
+            font-size: 25px;
+        }
+        .log_header img{height:40px;float: left;}
+        .log_body{background-position:center center;
+            background-repeat:no-repeat;
+            height: 470px;
+            background-image: url("../img/loginbg.jpg")
+        }
+        .form-border{
+            height: 427px;
+            float: right;
+            width: 350px;
+            border: 5px solid rgba(255,255,255,0.4);
+            margin-top:30px;
+            margin-right:280px;
+            border-radius: 6px;
+        }
+        .form-border2{background: #fff;
+            height: 386px;
+            padding: 20px 25px;
+            border-radius: 3px;
+            border: 1px solid #000;
+            position: relative;
+        }
+        .form-border2 p{float:right;}
+        .form-border2 span{font-size: 20px;
+            color: #444444;
+            float: left;
+
+        }
+        .form-border2 input{
+            width: 90%;
+            height: 36px;
+            border: 1px solid #d3d3d3;
+            border-radius: 3px;
+            margin:30px auto 0 auto;
+            line-height: 36px;
+            text-indent: 15px;
+        }
+        .comfirm{
+            float:right;
+            width:129px;
+            height:36px;
+            background-color: #cacaca;
+            margin-top:30px;
+        }
+        .btn1{height: 40px;
+            background: #E45050;
+            color: #fff;
+            text-indent:0;
+            line-height: 40px;
+            font-size: 16px;
+            border-radius: 3px;
+            border: none;
+            display: block;
+            text-align: center;
+            width: 100%;  }
+        .d_none{
+            display: none;
+        }
+        .loginBox,.regBox{
+            position: absolute;
+            display: none;
+            background-color: #E45050;
+            width: 140px;
+            height: 23px;
+            line-height: 23px;
+            font-size: 15px !important;
+            text-align: center;
+            margin: 2px;
+            right: 54px;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="log_header">
+        <a href="index.html"><img src="../img/bamalog.jpg" alt="0"/></a>
+        <h2>欢迎登录</h2>
+    </div>
+   </div>
+   <div class="log_body">
+    <!-- 登录窗口 -->
+       <div class="form-border" id="login">
+           <div class="form-border2">
+               <div>
+                   <span>会员登录</span>
+                   <p>还没有账号？<a href="javascript:;" id="go_reg">马上注册</a></p>
+                   <input type="text" placeholder="用户名" class="uname" />
+                   <span class="loginBox"></span>
+                   <input type="password" placeholder="密码" class="upwd"/>
+                   <span class="loginBox"></span>
+                   <input type="text" placeholder="图片验证码" class="comfirmBox" style="width:55%"/>
+                   <div class="comfirm">2222</div>
+                   <span class="loginBox"></span>
+                   <input type="button" value=" 登 录 " class="btn1" id="sublogin" />
+               </div>
+           </div>
+       </div>
+    <!--注册窗口-->
+       <div class="form-border d_none" id="reg">
+           <div class="form-border2">
+               <div>
+                   <span>注册账号</span>
+                   <p>已有账号？<a href="javascript:;" id="go_login">马上登录</a></p>
+                   <input type="text" placeholder="手机号码" class="regphone"/>
+                   <span class="regBox msgphone">222222</span>
+                   <input type="text" placeholder="用户名" class="reguname"/>
+                   <span class="regBox msguname">22222</span>
+                   <input type="text" placeholder="密码" class="regupwd"/>
+                   <span class="regBox msgpwd1">22222</span>
+                   <input type="text" placeholder="确认密码" class="regupwd1" />
+                   <span class="regBox msgpwd2"></span>
+                   <input type="button" value=" 注 册 " class="btn1" id="subreg"/>
+               </div>
+           </div>
+       </div>
+   </div>
+    <!--footer-->
+    <div class="footer_clear"></div>
+    <div class="footer">
+        <p>
+            <a href="#">关于我们</a> |
+            <a href="https://www.kuaidi100.com/">快递查询</a> |
+            <a href="#">友情链接</a>
+        </p>
+        <p class="footer_1p">
+            八马茶业股份有限公司版权所有  |
+            <a href="#">  ICP证粤B2-20130146</a>  |
+            <a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=z9gRGO5evOoiZSaXt-_5xzaaQJgN1m_B7xBNr1d7H1P5kHKWSZsD!-826430737">  粤ICP备10089578号-1</a> |
+            <a href="https://szcert.ebs.org.cn/b0e3d161-56a2-4ab5-ad78-9ced151acd58">
+                <img src="../img/govIcon.gif" alt="">
+            </a>
+        </p>
+        <p class="footer_2p">
+            <a href="https://szcert.ebs.org.cn/b0e3d161-56a2-4ab5-ad78-9ced151acd58">
+                <img src="../img/1525743659737.jpg" alt="">粤公网安备 44030302000288号
+            </a>
+        </p>
+    </div>
+</body>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/login.js"></script>
+</html>
