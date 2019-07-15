@@ -1,0 +1,108 @@
+.bg{
+  width:100%;
+  height:935px;
+  background:url(../img/reg_bg.jpg) no-repeat;
+  position:relative;
+}
+.container{
+  width:420px;
+  height:370px;
+  background:#fff;
+  position:absolute;
+  left:700px;
+  top:200px;
+}
+.login-title{
+  margin-top:10px;
+  width:100%;
+  height:40px;
+  background:url(../img/img_account.png) 20px -55px no-repeat;
+}
+.login-input{
+  width:370px;
+  height:35px;
+  margin:10px 25px;
+  border:1px solid #ddd;
+  background:url(../img/icon.png) 0 -800px no-repeat;
+}
+.login-input input{
+  display:block;
+  width:86%;
+  height:26px;
+  outline:0;
+  border:0;
+  margin-left:20px;
+  padding:3px;
+  font-size:14px;
+  font-weight:700;
+  color:#dc4b4b;
+}
+.login-password{
+  width:370px;
+  height:35px;
+  margin:10px 25px;
+  border:1px solid #ddd;
+  background:url(../img/icon.png) 0 -832px no-repeat;
+}
+.login-password input{
+  display:block;
+  width:86%;
+  height:26px;
+  outline:0;
+  border:0;
+  margin-left:20px;
+  padding:3px;
+  font-size:14px;
+  font-weight:700;
+  color:#dc4b4b;
+}
+.forget{
+  text-align:right;
+  margin:0 25px;
+}
+.container button{
+  display:block;
+  width:89%;height:42px;
+  margin:0 25px;
+  margin-top:20px;
+  margin-bottom:5px;
+  color:white;
+  background:#04B4AE;
+  border:0;
+  font-size:14px;
+  cursor:pointer;
+}
+.container p{
+  margin:0 25px;
+  text-align:right;
+  color:#444;
+  margin-bottom:40px;
+}
+.address{
+  margin:0 25px;
+  position: relative;
+}
+.login-qq{
+  position:absolute;
+  right:75px;
+  display:block;
+  width:23px;
+  height:23px;
+  background:url(../img/login_app.png) 0px -152px no-repeat;
+}
+.login-wb{
+  position:absolute;
+  right:50px;
+  display:block;
+  width:23px;
+  height:23px;
+  background:url(../img/login_app.png) 0px -129px no-repeat;
+}
+.login-wx{
+  position:absolute;
+  right:25px;
+  display:block;
+  width:23px;
+  height:23px;
+  background:url(../img/login_app.png) 0px -174px no-repeat;
+}

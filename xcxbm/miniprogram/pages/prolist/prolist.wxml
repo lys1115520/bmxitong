@@ -1,0 +1,61 @@
+<!--pages/prolist/prolist.wxml-->
+<van-search 
+value="{{ value }}" 
+bind:search="onSearch" 
+placeholder="搜索商品"
+use-action-slot='true'
+background="#aeecb1">
+  <view slot="action" bind:tap="onSearch">搜索</view>
+</van-search>
+<!-- 右边列表 -->
+<view class='typeList'>
+  <view class='list' wx:for="{{seachlist}}" wx:key="{{index}}">
+    <image src='{{item.smpic}}' mode='widthFix' lazy-load="true">
+    </image>
+    <view class='rightInfo'>
+      <text class='title' data-pid="{{item.pid}}" bindtap="todetail">{{item.title}}</text>
+      <text class='subTitle'>【买1送1】八马茶业 铁观音清香型兰花香新茶乌龙茶特级茶叶送礼礼盒装250克</text>
+      <view class='priceBox'>
+        <view class='price'>￥332</view>
+        <view class='addCartBtn' bindtap="addcartprop" data-index="index">
+          <van-icon name="plus"/>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>
+<!-- bindtap='onClose'弹出框 -->
+<van-action-sheet class="propvant" bind:close="onClose" show="{{show}}" >
+  <view class='propbox'>
+    <view class='floor1'>
+      <cover-view  class='imgbox'>
+        <cover-image class='img' src="http://i2.tiimg.com/692674/618c1a0f172d29e1.jpg" mode='widthFix'></cover-image>
+      </cover-view > 
+      <view class='titleandprice'>
+        <view><text>八马茶业</text></view>
+        <view class='price'>￥<text>600.00</text></view>
+      </view>
+      <view class='closebtn' bindtap="onClose"><van-icon name="close" /></view>
+    </view>
+    <view class='floor2'>
+      <view>产地 ：</view>
+      <van-tag type="danger" size="large">中国</van-tag>
+    </view>
+    <view class='floor3'>
+      <view class='count'>购买数量 ：</view>
+      <view><van-stepper value="{{ 1 }}" bind:change="onChange" /></view>
+    </view>
+  </view>
+  <view class='floor4'>
+    <view>
+      <van-button bindtap="addcart" type="warning" size="large">加入购物车</van-button>
+    </view>
+    <view>
+      <navigator url="/pages/cart/cart" open-type="switchTab">
+      <van-button bindtap="gobuynow" type="danger" size="large">立即购买</van-button>
+      </navigator>
+    </view>
+  </view>
+</van-action-sheet>
+

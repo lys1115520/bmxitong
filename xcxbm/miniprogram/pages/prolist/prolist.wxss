@@ -1,0 +1,93 @@
+/* pages/prolist/prolist.wxss */
+/* 右边  */
+.typeList{
+  width: 97%;
+  padding: 10rpx;
+  background-color:#fff}
+.list{
+  display: flex;
+  margin-bottom: 10rpx;
+}
+.list image{
+  width: 30%;
+}
+.list .rightInfo{
+  width: 70%;
+  overflow: hidden;
+  padding-left: 10rpx;
+}
+.title{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size:30rpx;
+  font-weight: 500;
+  /* font-family: PingFang SC,Helvetica Neue,Arial,sans-serif; */
+}
+.subTitle{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  padding-left: 8rpx;
+  font-size:25rpx;
+  color: #999;
+  margin: 8rpx 0 8rpx 0;
+}
+.priceBox{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10rpx;
+  color: red;
+  font-size: 30rpx;
+}
+.addCartBtn{
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 46rpx;
+  border: 1px solid red;
+  border-radius: 50%;
+}
+/* 底部弹出层 */
+.propbox{
+  padding: 30rpx;
+}
+.propbox .floor1{
+  display: flex;
+}
+.propbox .floor1 .img{
+  width: 200rpx;
+  height: 200rpx;
+  
+}
+.titleandprice{
+  width: 60%;
+}
+.propbox .floor1 .price{
+  color: red;
+}
+.floor1 .closebtn{
+  width: 10%;
+}
+.floor2{
+  margin: 35rpx 0 35rpx 0;
+  padding: 35rpx 0 35rpx 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.floor3{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.floor3 .count{
+  font-size: 30rpx;
+}
+.floor4{
+  display: flex;
+}
+.floor4 view{
+  width: 50%;
+}

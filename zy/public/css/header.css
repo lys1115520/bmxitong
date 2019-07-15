@@ -1,0 +1,94 @@
+.header_wrap{background:#000;width:100%;overflow:visible;}
+.head,.nav_wrap{width:80%;margin:0 auto;}
+.head-left{
+    margin-top:15px;
+    margin-left:40px;
+    float:left;
+}
+.head-left a{
+    display:block;
+    width:260px;
+    height:80px;
+    background:url(../img/zhayanlogo-new.png) center no-repeat;
+}
+.head-middle{
+    float:left;
+    padding-left:200px;
+    padding-top:20px;
+    width:30%;
+}
+.head-middle a{    
+    color:#fff;
+    font-size:12px;
+}
+.head-middle ul li{
+    float:left;
+    font-size:12px;
+    width:60px;
+    height:25px;
+    cursor:pointer;
+    text-align: center;
+    line-height:25px;
+    color:#fff;
+}
+#search-bd .selected{background:#fff;color:#444444;font-weight:700;}
+#search-text{
+    background-color:#000;
+    width:75%;
+    padding-left:8px;
+    height:25px;
+    border:2px solid#fff;
+    box-sizing:border-box;
+    margin:0;
+    color:red;
+    outline:0;
+}
+.search-input button{
+    width:80px;
+    height:25px;
+    color:#444444;
+    margin:0;
+    background-color:#fff;
+    border:0;
+    cursor:pointer;
+}
+.nav_wrap{margin-top:50px;}
+.kind{
+    float:left;
+    width:160px;
+    height:55px;
+    background:#fff;
+    text-align:center;
+    cursor: pointer;
+}
+.kind a{
+    color:#444444;
+    font:bold 14px/47px 'Microsoft Yahei';
+    line-height:50px;
+}
+.nav li a{
+    float:left;
+    color:#fff;
+    font:bold 14px/47px 'Microsoft Yahei';
+    padding:0 20px;
+}
+#nav0::after{
+    content:"";
+    display:block;
+    width:0;
+    height:0;
+    border:10px solid #fff;
+    border-color:#fff transparent transparent transparent;
+}
+.user li {
+    float:right;
+    padding-left:5px;
+    line-height:40px;
+}
+.user-link{color:#fff;}
+.kind-main{
+    color:white;
+    position: absolute;
+    top:160px;
+    display: none;
+}

@@ -1,0 +1,102 @@
+<!--商品详情页-->
+<!-- 轮播图 -->
+<swiper
+indicator-dots="true" autoplay="true" interval="3000" circular="true">
+  <swiper-item>
+    <image mode='widthFix' src='http://i2.tiimg.com/692674/c292bebf0f2301e0.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='http://i2.tiimg.com/692674/c292bebf0f2301e0.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='http://i2.tiimg.com/692674/c292bebf0f2301e0.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='http://i2.tiimg.com/692674/c292bebf0f2301e0.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='http://i2.tiimg.com/692674/c292bebf0f2301e0.jpg'></image>
+  </swiper-item>
+</swiper>
+<!-- 主体 -->
+<view class='bodycontent'>
+  <view class='flex'>
+    <view class='title'>八马茶业 | 浓香铁观音茶业-赛珍珠1000烟条装. 133g/盒 </view>
+    <view>分享</view>
+  </view>
+  <text class='subtitle'>【买好茶 到八马】</text>
+  <view class='flex yfAndCount'>
+    <view>运费 免运费</view>
+    <view>销量 90</view>
+  </view>
+  <view class='price'>
+    ￥<text>238</text>.00
+  </view>
+  <view>
+    <text>企业担保</text>
+  </view>
+  <view class='flex yfAndSpc'>
+    <view class='font28'>已选</view>
+    <view class='width8'>133g</view>
+    <view>></view>
+  </view>
+  <view class='flex yfAndSpc'>
+    <view class='font28'>配送</view>
+    <view class='width8'>快递</view>
+    <view>></view>
+  </view>
+  <!-- 店铺logo -->
+  <view>logo</view>
+
+  <!-- 宝贝评价 -->
+  <view class='baobeiRate'>
+    <view>宝贝评价(1)</view>
+    <view>全部评价 ></view>
+  </view>
+  <view class='contentRate'>
+    <view>追评 0</view>
+    <view>差评 0</view>
+    <view>好评 0</view>
+    <view>中评 0</view>
+  </view>
+  <view class='flex vanRate'>
+    <view>隔**黄</view>
+    <view>
+      <van-rate
+      readonly
+      value="{{ 5 }}"
+      size="{{ 20 }}"
+      color="#f44"
+      void-color="#ddd"
+      void-icon="star"/>
+    </view>
+  </view>
+  <view class='font28'>就喜欢这个茶味, 香</view>
+  <view class='font28'>133g</view>
+  <!-- 详情图片 -->
+  <van-tabs active="{{ active }}" bind:change="onChange" line-width='150' >
+    <van-tab title="商品详情">
+      <view class='imageBox'>
+        <image src='http://i2.tiimg.com/692674/c292bebf0f2301e0.jpg'></image>
+      </view>
+      <view class='imageBox'>
+        <image src='http://i2.tiimg.com/692674/c292bebf0f2301e0.jpg'></image>
+      </view>
+      <view class='imageBox'>
+        <image src='http://i2.tiimg.com/692674/c292bebf0f2301e0.jpg'></image>
+      </view>
+    </van-tab>
+    <van-tab title="成交记录">内容 2fgggggggggggg
+    
+    
+    </van-tab>
+  </van-tabs>
+</view>
+<!-- 底部 -->
+<van-goods-action class="footer">
+  <van-goods-action-icon icon="shop-o" text="首页" />
+  <van-goods-action-icon icon="chat-o" text="客服" />
+  <van-goods-action-icon icon="cart-o" text="购物车" info="5" /> 
+  <van-goods-action-button text="加入购物车" type="warning" />
+  <van-goods-action-button text="立即购买" />
+</van-goods-action>

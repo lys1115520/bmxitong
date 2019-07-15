@@ -1,0 +1,88 @@
+/* pages/prodetail/prodetail.wxss */
+/* 轮播图 */
+swiper,swiper image{
+  width: 100%;
+  height: 750rpx;
+}
+/* 主体部分*/
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bodycontent{
+  padding: 15rpx;
+  margin-bottom: 160rpx;
+}
+.title{
+  width: 85%;
+  height: 90rpx;
+  line-height: 45rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size:35rpx;
+  font-family:MicroSoft yahei;
+}
+.subtitle{
+  font-size:25rpx;
+  color: #666;
+}
+.yfAndCount{
+  height: 80rpx;
+  font-size: 25rpx;
+  color: #333;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+.yfAndSpc{
+  height: 80rpx;
+  border-bottom: 1px solid #999;
+}
+.price{
+  color: red;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.width8{
+  width: 80%;
+  font-size: 25rpx;
+}
+.font28{
+  font-size: 28rpx;
+}
+.baobeiRate{
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #999;
+}
+.contentRate {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #999;
+}
+.contentRate view{
+  width: 15%;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  margin-right: 10rpx;
+  background-color: pink;
+}
+.vanRate{
+  font-size: 28rpx;
+}
+.imageBox image{
+  width: 100%;
+  height: 750rpx;
+}
+/* 底部 */
+.footer{
+  z-index: 900;
+}

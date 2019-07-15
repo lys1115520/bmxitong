@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/reg.css">
+</head>
+<body>
+    <header>
+        <iframe src="header.html" frameborder="0" class="header"></iframe>
+      </header>
+      <section>
+        <div class="bg">
+          <table></table>
+          <div class="container">
+            <div class="reg-title"></div>
+            <div class="reg-method myfontsize">
+              <span>注册方式:</span>
+              <label><input type="radio" name="reg-method">手机</label>
+              <label><input type="radio" name="reg-method">电子邮箱</label> 
+            </div>
+            <div class="reg-input"><input type="text" placeholder="请输入手机号" id="uname"></div>
+            <div class="reg-input"><input type="password" placeholder="请输入短信验证码"><button value="获取验证码" id="getIdcode">获取验证码</button></div>
+            <div class="sex myfontsize"><span>你的性别:</span><input type="radio" name="reg-method"><span>女士</span><input type="radio" name="reg-method"><span>先生</span></div>
+            <div class="reg-password"><input type="password" placeholder="请输入登录密码" id="upwd"></div>
+            <div class="reg-password"><input type="password" placeholder="请再次输入登录密码"></div>
+            <button type="submit" id="regBtn">注 册</button>
+            <p class="myfontsize">已经有账号？<span><a href="">请直接登录</a></span></p>
+            <div class="address">
+                <a href="" class="login-qq"></a>
+                <a href="" class="login-wb"></a>
+                <a href="" class="login-wx"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <iframe src="footer.html" frameborder="0" class="footer"></iframe>
+      </footer>
+      <script src="js/jquery-1.11.3.js"></script>
+      <script src="js/reg.js"></script>
+</body>
+</html>

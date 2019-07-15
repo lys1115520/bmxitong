@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/type/type",
+    "pages/user/user",
+    "pages/prolist/prolist",
+    "pages/search/search",
+    "pages/prodetail/prodetail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "八马茶业旗舰店",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#e54748",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/shouye.png",
+        "iconWidth": 50,
+        "iconHeight": 50,
+        "selectedIconPath": "images/shouyer.png"
+      },
+      {
+        "pagePath": "pages/type/type",
+        "text": "分类",
+        "iconPath": "images/fenlei.png",
+        "selectedIconPath": "images/fenleir.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/cart.png",
+        "selectedIconPath": "images/cartr.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/wode.png",
+        "selectedIconPath": "images/woder.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-search": "vant-weapp/search/index",
+    "van-icon": "vant-weapp/icon/index"
+  }
+}

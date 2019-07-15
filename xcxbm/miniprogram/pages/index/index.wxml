@@ -1,0 +1,10 @@
+<van-search 
+value="{{ value }}" 
+placeholder="搜索商品"
+bind:search="onSearch"  
+background="#aeecb1"/>
+<view class='imgbox' wx:for="{{imgList}}" wx:key="{{index}}">
+  <navigator url="/pages/prodetail/prodetail?pid=2" >
+    <image src='{{item}}' mode='widthFix' lazy-load="true"></image>
+  </navigator>  
+</view>

@@ -1,0 +1,66 @@
+<!--分类页面-->
+<view class='contentBox'>
+  <!-- 左边类名 -->
+  <view class='typeName' bindtap='select'>
+    <view wx:for="{{typeName}}" 
+    class="{{index == selectindex?'itemactive':''}}" 
+    wx:key="{{index}}" data-index="{{index}}">{{item}}</view>
+  
+  </view>
+  <!-- 右边列表 -->
+  <view class='typeList'>
+    <view class='list' wx:for="{{list}}" wx:key="{{index}}">
+      <image src='{{item.smpic}}' mode='widthFix' lazy-load="true">
+      </image>
+      <view class='rightInfo'>
+        <text class='title' data-pid="{{item.pid}}" bindtap="todetail">{{item.title}}</text>
+        <text class='subTitle'>{{item.title}}</text>
+        <view class='priceBox'>
+          <view class='price'>￥{{item.price}}</view>
+          <view class='addCartBtn' bindtap="addcartprop" data-index="{{index}}">
+            <van-icon name="plus"/>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+<!-- bindtap='onClose'弹出框 -->
+  <van-action-sheet class="propvant" bind:close="onClose" show="{{show}}" >
+    <view class='propbox'>
+      <view class='floor1'>
+        <cover-view  class='imgbox'>
+          <cover-image class='img' src="{{proplist.smpic}}" mode='widthFix'></cover-image>
+        </cover-view > 
+        <view class='titleandprice'>
+          <view><text>八马茶业</text></view>
+          <view class='price'>￥<text>600.00</text></view>
+        </view>
+        <view class='closebtn' bindtap="onClose"><van-icon name="close" /></view>
+      </view>
+      <view class='floor2'>
+        <view>产地 ：</view>
+        <van-tag type="danger" size="large">中国</van-tag>
+      </view>
+      <view class='floor3'>
+        <view class='count'>购买数量 ：</view>
+        <view><van-stepper value="{{ 1 }}" bind:change="onChange" /></view>
+      </view>
+    </view>
+    <view class='floor4'>
+      <view>
+        <van-button bindtap="addcart" type="warning" size="large">加入购物车</van-button>
+      </view>
+      <view>
+        <navigator url="/pages/cart/cart" open-type="switchTab">
+        <van-button bindtap="gobuynow" type="danger" size="large">立即购买</van-button>
+        </navigator>
+      </view>
+    </view>
+  </van-action-sheet>
+
+</view>
+
+
+
+

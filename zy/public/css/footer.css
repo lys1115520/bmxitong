@@ -1,0 +1,26 @@
+.footer{
+    background:#444444;
+    text-align:justify;
+}
+.safe,.copy{
+     width:80%;
+    margin:0 auto;
+}
+dl{
+    float:left;
+    width:180px;
+    padding-left:100px;
+}
+dt,a,dd{color:#fff;}
+dt{
+    font-weight:700;
+    padding-top:15px;
+    padding-bottom:10px;
+}
+dd{line-height:30px;}
+dl dd img{width:108px;height:108px;}
+.copy{
+    color:#fff; 
+    text-align:center;
+    padding-top:50px;
+}

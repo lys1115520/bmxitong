@@ -1,0 +1,12 @@
+*{padding:0;margin:0;}
+.clearfix{clear:both;}
+.myfontsize{font-size:12px;}
+ul,ol{list-style:none;}
+a{text-decoration:none;color:black;}
+.header{width:100%;height:200px;}
+.footer{width:100%;height:370px;}
+.hide{display: none;}
+.mybold{font-weight:bold;}
+.mygray{color:#666;}
+.mylightblue{color:#04B4AE;}
+.red{color:#f00}
